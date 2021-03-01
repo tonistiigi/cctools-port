@@ -67,6 +67,7 @@
 #define	_MACHTYPES_H_
 
 #ifndef __ASSEMBLER__
+#include <sys/types.h>
 #include <ppc/_types.h>
 #include <sys/cdefs.h>
 /*
@@ -90,9 +91,9 @@ typedef	int			int32_t;
 typedef	unsigned int		u_int32_t;
 #ifndef _INT64_T
 #define _INT64_T
-typedef	long long		int64_t;
+// typedef	long long		int64_t;
 #endif
-typedef	unsigned long long	u_int64_t;
+//typedef	unsigned long long	u_int64_t;
 
 #if __LP64__
 typedef int64_t			register_t;
